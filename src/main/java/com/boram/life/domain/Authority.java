@@ -7,7 +7,6 @@ import javax.persistence.*;
 
 @Entity
 @Getter @Setter
-@Table(name = "AUTHORITY")
 public class Authority {
     @Id @GeneratedValue
     @Column(name = "auth_num")

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="login-card">
+    <div class="login-card__header">
+        <h2>Login</h2>
+    </div>
+    <div class="login-card__body">
+        <form method="post" action="/login">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autofocus>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
