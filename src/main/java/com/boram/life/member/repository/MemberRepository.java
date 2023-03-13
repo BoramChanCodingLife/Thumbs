@@ -2,14 +2,13 @@ package com.boram.life.member.repository;
 
 import com.boram.life.domain.Member;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.List;
 
 @Repository
-public class memberRepository {
-
+public class MemberRepository {
     @PersistenceContext
     EntityManager em;
 
