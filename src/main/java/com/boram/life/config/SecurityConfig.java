@@ -11,11 +11,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-
     /* 비밀번호 암호화에 사용할 객체 : BCryptPasswordEncoder bean 등록 */
     @Bean
     public PasswordEncoder passwordEncoder(){
-
         return new BCryptPasswordEncoder();
     }
 

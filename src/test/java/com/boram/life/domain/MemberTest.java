@@ -16,13 +16,11 @@ import javax.persistence.PersistenceContext;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-@Rollback(value = false)
 @Slf4j
 @Transactional
-@RequiredArgsConstructor
 @SpringBootTest
+@Rollback(value = false)
 class MemberTest {
-
     @Autowired
     private MemberRepository memberRepository;
 
@@ -31,16 +29,12 @@ class MemberTest {
 
     @Test
     public void 맴버_도메인_테스트(){
+
+        log.info("MemberTest.맴버_도메인_테스트");
+
         //given
-        Authority authority1 = new Authority();
-        authority1.setAuthName("ROLE_USER");
-        authority1.setAuthContent("일반 사용자 권한");
-
-        Authority authority2 = new Authority();
-        authority2.setAuthName("ROLE_ADMIN");
-        authority2.setAuthContent("관리자 권한");
-
         Member member1 = new Member();
+
         member1.setMemberPw("1234");
         member1.setMemberAddress("서울특별시 강남구");
         member1.setMemberGender("여성");
